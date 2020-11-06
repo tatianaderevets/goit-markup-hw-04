@@ -235,16 +235,16 @@ p {
   background-color: var(--accent-background-color: #f5f4fa;)
 
 }
-.icon-antenna{
+.icon-antenna::before{
   background-image: url(../images/antenna\ 1.svg);
 }
-.icon-clock{
+.icon-clock::before{
  background-image: url(../images/clock\ 1.svg);
 }
-.icon-diagram{
+.icon-diagram::before{
  background-image: url(../images/diagram\ 1.svg);
 }
-.icon-astronaut{
+.icon-astronaut::before{
  background-image: url(../images/astronaut\ 1.svg);
 }
 
