@@ -152,6 +152,22 @@ p {
   color: var(--accent-text-first);
 }
 /* hero */
+.overlay{
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+    to right,
+   rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/Img\ hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+ }
 .hero,
 .footer {
   background-color: var(--title-background-color);
@@ -208,7 +224,30 @@ p {
 }
 .list {
   margin-right: 30px;
+
 }
+.list::before{
+  content: "";
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--accent-background-color: #f5f4fa;)
+
+}
+.icon-antenna{
+  background-image: url(../images/antenna\ 1.svg);
+}
+.icon-clock{
+ background-image: url(../images/clock\ 1.svg);
+}
+.icon-diagram{
+ background-image: url(../images/diagram\ 1.svg);
+}
+.icon-astronaut{
+ background-image: url(../images/astronaut\ 1.svg);
+}
+
 .list:last-child {
   margin-right: 0px;
 }
