@@ -15,6 +15,7 @@
   --title-background-color: #2f303a;
   --accent-background-color: #f5f4fa;
   --wite: #ffffff;
+  --icon-color: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -121,8 +122,8 @@ p {
 .site-nav .item + .item {
   margin-left: 50px;
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .icon-header a:hover,
+.site-nav .icon-header a:focus {
   color: var(--accent-text-first);
 }
 
@@ -151,6 +152,25 @@ p {
 .contact-link a:focus {
   color: var(--accent-text-first);
 }
+.icon-header{
+  margin-right: 10px;
+  fill: var(--title-text-color);
+  
+}
+.link:hover .icon-header,
+.link:focus.icon-header{
+  fill: var(--accent-text-first);
+}
+/* .contacts-item:hover .contacts-item-svg,
+.contacts-item:focus .contacts-item-svg {
+fill: var(--accent-cl);
+}
+.contacts-item:hover,
+.contacts-item:focus {
+border-color: var(--accent-cl);
+} (edited)  */
+
+
 /* hero */
 .overlay{
   height: 600px;
@@ -289,7 +309,8 @@ p {
   padding-bottom: 94px;
 }
 .our-work,
-.our-team {
+.our-team,
+.clients {
   font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
@@ -328,6 +349,30 @@ p {
   line-height: 1.18;
   margin-bottom: 30px;
 }
+/* clients */
+.list-clients{
+  display: flex;
+  list-style: none;
+}
+.svg-clients{
+align-items: center;
+justify-content: center;
+width: 170px;
+height: 90px;
+margin-bottom: 91px;
+margin-right: 30px;
+border: 1px solid var(--icon-color);
+border-radius: 4px;
+box-sizing: border-box;
+}
+.svg-clients:last-child {
+  margin-right: 0px;
+}
+.icon-clients{
+  fill: var(--icon-color);
+  background-position: center;
+}
+
 
 /* footer */
 .footer{
