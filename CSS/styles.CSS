@@ -249,7 +249,7 @@ p {
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--accent-background-color: #f5f4fa;);
+  background-color: var(--accent-background-color);
 }
 .icon-antenna::before {
   background-image: url(../images/antenna\ 1.svg);
@@ -301,7 +301,7 @@ p {
 /* our-team */
 .section {
   background-color: var(--accent-background-color);
-  /* padding-top: 94px; */
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .our-work,
@@ -392,6 +392,10 @@ p {
 }
 
 /* clients */
+.section-clients {
+  background-color: #fff;
+  padding-top: 97px;
+}
 .list-clients {
   display: flex;
 }
@@ -416,13 +420,13 @@ p {
   fill: var(--icon-color);
   background-position: center;
 }
-.icon-clients:hover,
-.icon-clients:focus {
-  fill: var(--accent-text-first);
-}
 .svg-clients:hover,
 .svg-clients:focus {
   border-color: var(--accent-text-first);
+}
+.svg-clients:hover .icon-clients,
+.svg-clients:focus .icon-clients {
+  fill: var(--accent-text-first);
 }
 
 /* footer */
