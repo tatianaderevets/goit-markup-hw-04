@@ -395,6 +395,7 @@ p {
 .section-clients {
   background-color: #fff;
   padding-top: 97px;
+  padding-bottom: 91px;
 }
 .list-clients {
   display: flex;
